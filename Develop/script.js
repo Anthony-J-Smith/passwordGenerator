@@ -22,11 +22,19 @@ function writePassword() {
   for (var i = 0; i < 15; i++) {
     // 
 
-
+alphaNumericSpecial + lowerCase
     
-      if (document.getElementById("myCheck").checked = true;){
-        
+      if (document.getElementById("capital").checked = true){
+alphaNumericSpecial + upperCase
+      } else if (document.getElementById("number").checked = true) {
+alphaNumericSpecial + numCase
+      } else if (document.getElementById("special").checked = true) {
+        alphaNumericSpecial + specialCase
+      } else {
+        alphaNumericSpecial
       }
+
+
     
     
 
@@ -34,14 +42,14 @@ function writePassword() {
    
 
 
-    password += alphaNumericSpecial[Math.floor(Math.random() * alphaNumericSpecial.length)];
+      alphaNumericSpecial += [Math.floor(Math.random() * alphaNumericSpecial.length)];
     
     // Display in console
-    console.log(password);
+    console.log(alphaNumericSpecial);
 
     
   }
-  document.getElementById("password").value = password;
+  document.getElementById("password").value = alphaNumericSpecial;
 }
 
 
