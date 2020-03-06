@@ -21,23 +21,22 @@ function writePassword() {
   //add a variable selector on 15 for an user input
   for (var i = 0; i < 15; i++) {
     // 
-
+//takes the lowercase letters to alpha
 alphaNumericSpecial + lowerCase
-    
+    //checks to see of checkbox is checked
       if (document.getElementById("capital").checked = true){
+        //if the box is checked it adds upperCase to the array
 alphaNumericSpecial + upperCase
       } else if (document.getElementById("number").checked = true) {
+        //if box is checked it adds numCase to the array
 alphaNumericSpecial + numCase
       } else if (document.getElementById("special").checked = true) {
+        //if box is checked it adds specialCase to the array
         alphaNumericSpecial + specialCase
       } else {
+        //if no boxes are checked return to default
         alphaNumericSpecial
       }
-
-
-    
-    
-
     
    
 
