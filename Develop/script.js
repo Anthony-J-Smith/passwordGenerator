@@ -14,11 +14,24 @@ function writePassword() {
   var password = "";
   //
   var alphaNumericSpecial = "";
+ 
+ 
+
   // Loop 15 times
   //add a variable selector on 15 for an user input
   for (var i = 0; i < 15; i++) {
     // 
 
+
+    
+      if (document.getElementById("myCheck").checked = true;){
+        
+      }
+    
+    
+
+    
+   
 
 
     password += alphaNumericSpecial[Math.floor(Math.random() * alphaNumericSpecial.length)];
